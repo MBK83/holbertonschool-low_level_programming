@@ -1,4 +1,4 @@
-#include "main.h"
+nclude "main.h"
 /**
  *  * more_numbers - Retry point
  *   *
@@ -11,7 +11,6 @@ void more_numbers(void)
 
 	for (a = 0; a <= 9; a++)
 	{
-
 		for (b = 0; b <= 14; b++)
 		{
 			if (b >= 10)
