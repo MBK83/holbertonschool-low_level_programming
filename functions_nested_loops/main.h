@@ -1,2 +1,4 @@
-int _putchar(char c)
+#include <stdio.h>
+
+int _putchar(char);
 void print_alphabet(void);	
