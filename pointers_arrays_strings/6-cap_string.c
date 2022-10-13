@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  * cap_string - Expect the best. Prepare for the worst. Capitalize on what come
+ * cap_string - Expect the best. Prepare for the worst. Capitalize on what come
  *   *
  *    * @s: capitalizes all words of a string.
  *     *
@@ -20,7 +20,7 @@ char *cap_string(char *s)
 			i++;
 		}
 		if (*(s + i) == ' ' || *(s + i) == '\n' || *(s + i) == '\t'
-			     	|| *(s + i) == ',' || *(s + i) == ';' || *(s + i) == '!'	
+				|| *(s + i) == ',' || *(s + i) == ';' || *(s + i) == '!'
 				|| *(s + i) == '?' || *(s + i) == '"' || *(s + i) == '('
 				|| *(s + i) == ')' || *(s + i) == '{' || *(s + i) == '}'
 				|| *(s + i) == '.')
