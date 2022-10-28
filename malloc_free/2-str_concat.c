@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- *  * *str_concat - He who is not courageous enough to take risks will accomplish
- *   * @s1: Werite a function
- *    * @s2: that concatenates two strings
- *     *
- *      * Return: 0
+ *str_concat - He who is not courageous enough to take risks will accomplish
+ *@s1: Werite a function
+ *@s2: that concatenates two strings
+ *Return: 0
  **/
 
 char *str_concat(char *s1, char *s2)

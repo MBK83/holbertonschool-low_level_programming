@@ -3,9 +3,9 @@
 /**
  *  * _strdup - The woman who has no imagination has no wings
  *   *
- *    * @str: Write a function that returns a pointer to a newly allocated space
- *     *
- *      * Return: char
+ *@str: Write a function that returns a pointer to a newly allocated space
+ *
+ *Return: char
  **/
 
 char *_strdup(char *str)
