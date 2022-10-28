@@ -1,32 +1,39 @@
-#include "main.h"
-
-/**
- *  * _strdup - The woman who has no imagination has no wings
- *   *
- *@str: Write a function that returns a pointer to a newly allocated space
- *
- *Return: char
+/*
+ *  * File: 1-strdup.c
+ *   * Auth: Brennan D Baraban
  **/
 
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ *  * _strdup - Returns a pointer to a newly-allocated space in memory
+ *   *           containing a copy of the string given as parameter.
+ *    * @str: The string to be copied.
+ *     *
+ *      * Return: If str == NULL or insufficient memory is available - NULL.
+ *       *         Otherwise - a pointer to the duplicated string.
+ **/
 char *_strdup(char *str)
 {
-		char *num;
-		unsigned int a = 0;
-		unsigned int b = 0;
+	char *duplicate;
+	int index, len = 0;
 
-		if (str == NULL)
-			return (NULL);
-		while (str[a] != '\0')
-			a += 1;
-		a += 1;
-		num = malloc(a * sizeof(num));
-		if (num == NULL)
-			return (NULL);
-		while (b < a)
-		{
-			num[b] = str[b];
-			b += 1;
-		}
-		return (num);
+	if (str == NULL)
+		return (NULL);
+
+	for (index = 0; str[index]; index++)
+		len++;
+
+	duplicate = malloc(sizeof(char) * (len + 1));
+
+	if (duplicate == NULL)
+		return (NULL);
+
+	for (index = 0; str[index]; index++)
+		duplicate[index] = str[index];
+
+	duplicate[len] = '\0';
+
+	return (duplicate);
 }
-
