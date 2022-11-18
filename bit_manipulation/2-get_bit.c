@@ -1,7 +1,7 @@
 /*
  *  * File: 2-get_bit.c
  *   * Auth: Brennan D Baraban
-*   */
+**/
 
 #include "main.h"
 
